@@ -1,4 +1,4 @@
-/*SEARCH BY USING A CITY NAME (e.g. Dhaka) OR A COMMA-SEPARATED CITY NAME ALONG WITH THE COUNTRY CODE (e.g. Dhaka, BD)*/
+/*SEARCH BY USING A CITY NAME (e.g. Dhaka or Stockholm) OR A COMMA-SEPARATED CITY NAME ALONG WITH THE COUNTRY CODE (e.g. Dhaka, BD)*/
 const form = document.querySelector(".top-banner form");
 const input = document.querySelector(".top-banner input");
 const msg = document.querySelector(".top-banner .msg");
@@ -54,7 +54,7 @@ form.addEventListener("submit", e => {
     if (filteredArray.length > 0) {
       msg.textContent = `You already know the weather for ${
         filteredArray[0].querySelector(".city-name span").textContent
-      } ...otherwise be more specific by providing the country code as well 😉`;
+      } ..otherwise be more specific by providing the country code as well`;
       form.reset();
       input.focus();
       return;

@@ -1,2 +1,4 @@
 .env
 node_modules
+
+// Inside the github, .env and node_modules both of them are ignored.
